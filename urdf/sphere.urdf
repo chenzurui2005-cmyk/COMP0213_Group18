@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<robot name="sphere_robot">
+
+  <!-- Link: Sphere -->
+  <link name="sphere_link">
+    <!-- Visual representation -->
+    <visual>
+      <geometry>
+        <sphere radius="0.05"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+
+    <!-- Collision shape -->
+    <collision>
+      <geometry>
+        <sphere radius="0.04"/>
+      </geometry>
+    </collision>
+
+    <!-- Inertial properties -->
+    <inertial>
+      <mass value="1.0"/>
+      <inertia ixx="0.00067" ixy="0.0" ixz="0.0" 
+               iyy="0.00067" iyz="0.0" 
+               izz="0.00067"/>
+    </inertial>
+  </link>
+
+</robot>
